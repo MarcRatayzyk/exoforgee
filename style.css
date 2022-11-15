@@ -1,0 +1,513 @@
+*,::before ,::after{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+header{
+    background-image: url(./Projet\ sans\ titre\ 43\ filtré.jpg);
+    background-position-x:center ;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    z-index: 10;
+    
+}
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    background-color:rgb(83 77 79) ;
+}
+html{
+    font-family: Poppins;
+}
+.navbar{
+    position: relative;
+    right: -5%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    overflow-x: hidden;
+    height: 90px;
+}
+.btnnav{
+    position: absolute;
+}
+.nav2{
+    height: 90px;
+    background-color:rgb(84 77 79);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    display: none;
+    width: 100%;
+    z-index: 400000;
+}
+.log2{
+    position: relative;
+    left: 10%;
+    width: 240px; 
+    overflow: hidden;  
+}
+.hamb{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    z-index: 500000;
+    display: none;
+    transition: all 0.25s ease-in-out;
+}
+.hamb:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.navbar li  a{
+    position: relative;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 1.7em;
+    color: #fff;
+    z-index: 20;
+    transition: all 0.5s ease;
+    
+}
+.navbar li  a:hover{
+    color: rgb(253, 153, 39);
+    border-bottom: 1px rgb(253, 153, 39) solid ;
+}
+
+.imgnav{
+    position: relative;
+    right: 2%;
+    width: 20%;
+    
+}
+.banniere1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.banniere1 img{
+    width: 35%;
+}
+.para1{
+    color: #fff;
+    font-family: Poppins;
+    font-size: 1.7em;
+    width: auto;
+    letter-spacing: 2px;
+    position:relative ;
+    text-align: center;
+    
+}
+.logo{
+    position: relative;
+}
+
+
+.l1 {
+    display: block;
+    width: 500px;
+    height: 3px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+.sec1{
+    text-align: center;
+}
+.art1{
+     margin-bottom: 20px;
+}
+.art1 div{
+    border: 2px #000 solid;
+    width: 90%;
+    left: 5%;
+    position: relative;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+.titre1{
+    position: relative;
+    left: 50%;
+    transform: translateX(-59%);
+    width: 300px;
+    margin: 20px;
+    font-size: 1.7em;
+    border-bottom: 2px #000 solid;
+}
+.titre3{
+    margin: 13px;
+}
+#sec1{
+    position: absolute;
+    margin-top: -90px;
+    color: #fff;
+    z-index: 500;
+}
+#sec2{
+    position: absolute;
+    margin-top: -90px;
+    color: #fff;
+    z-index: 500;
+    
+}
+.photo img{
+    width: 50%;
+}
+.slider{
+    width: 82%;
+    height: auto;
+    overflow: hidden;
+    border: 2px solid rgb(255, 153, 0);
+    margin-top: 5px;
+}
+.main{
+    background: linear-gradient(rgb(84 77 79),rgb(255,95,0),rgb(84 77 79));
+}
+.slides{
+    width: 500%;
+    height: auto;
+    display: flex;
+    background: #fff;
+}
+.body1{
+    
+    grid-area: p2;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.taille{
+    width: 90%;
+}
+
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width: 100%;
+    height: auto;
+}
+.navigation-manual{
+    position: absolute;
+    width: 90%;
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transform: translateX(-5%);
+}
+.manual-btn{
+    border: 2px solid rgb(255, 153, 0);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 48%;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: #f8a60e;
+}
+#radio1:checked~.first{
+    margin-left: 0;
+}
+#radio2:checked~.first{
+    margin-left: -20%;
+}
+#radio3:checked~.first{
+    margin-left: -40%;
+}
+#radio4:checked~.first{
+    margin-left: -60%;
+}
+#radio5:checked~.first{
+    margin-left: -80%;
+}
+/*#radio6:checked~.first{
+    margin-left: -100%;
+}*/
+.navigation-auto{
+    position :absolute;
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin-top: 460px;
+}
+.navigation-auto div{
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    /*border-radius: 10px;*/
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked~.navigation-auto .auto-btn1{
+    background: #f8a60e;
+}
+#radio2:checked~.navigation-auto .auto-btn2{
+    background: #f8a60e;
+}
+#radio3:checked~.navigation-auto .auto-btn3{
+    background: #f8a60e;
+}
+.art2{
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+   
+}
+.tire4{
+    font-size: 1.7em;
+    
+    border-radius: 2px #fff solid;
+}
+.para4{
+    font-size: 1.3em;
+}
+
+#contact{
+    position: absolute;
+    margin-top: -90px;
+    color: #fff;
+    z-index: 5000;
+}
+.contactart{
+    background-image: url(./Goulot\ en\ point\ torsadés\ -\ Alpha.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 20px;
+    height:520px;
+}
+.contacttitre{
+    position: relative;
+    text-align: center;
+    font-size: 2.1em;
+    margin-bottom: 10%;
+    color: #fff;
+}
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "mail tel loca";
+}
+.mail{
+    grid-area: mail;
+    text-align: center;
+    color:#fff;
+}
+.telephone{
+    grid-area: tel;
+    text-align: center;
+    color:#fff;
+}
+.loca{
+    grid-area: loca;
+    text-align: center;
+    color:#fff;
+}
+.imgcon{
+    height: 100px;
+    margin: 15px;
+}
+.conti{
+    font-size: 1.5em;
+    margin: 15px;
+}
+.ligne{
+    position: relative;
+    width: 200px;
+    height: 2px;
+    background-color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* .imgou{
+    position: absolute;
+    z-index: -10;
+    margin-top: -100px;
+    width: 100vw;
+    height: 300px;
+    overflow: hidden;
+} */
+.mentions{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.mentions a{
+    color: #fff;
+}
+.mentions a:hover{
+    color: rgb(172, 166, 166);
+}
+/* @media (max-width:930px) {
+    .navbar li  a{
+        font-size: 1.3em;
+    }
+    .imgnav{
+        width: 230px;
+    }
+    .para1{
+        font-size: 1.5em;
+    }
+    .banniere1{
+        margin-top: 33%;
+    }
+    .contacttitre{
+        transform: translateX(-20%);
+        width: 30%;
+    }
+} */
+@media (max-width:850px) {
+    .hamb{
+        display: block;
+        position: fixed;
+    }
+    .imgnav{
+        display: none;
+    }
+    .nav2{
+        display: block;
+    }
+    .menutoggle{
+        position:absolute;
+        position: fixed;
+        display : flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: rgba(53, 47, 47, 0.158);
+        backdrop-filter: blur(7px);
+        margin-left: -100%;
+        overflow: hidden;
+       
+    }
+    .navbar{
+        right: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display : flex ;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .navbar li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobile-menu{
+        margin-left: 0;
+        transition:  0.6s ease;
+    }
+    
+}
+@media (max-width:700px){
+    .para1{
+        letter-spacing: 1px;
+    }
+    
+    .l1{
+        width: 250px;
+    }
+    .mail img{
+        height: 70px;
+       
+    }
+    .telephone img{
+        height: 70px;
+        margin: 15px;
+    }
+    .loca img{
+        height: 70px;
+        
+    }
+    .ligne{
+        width: 120px;
+    }
+    .conti{
+        margin: 0;
+    }
+    .loca p{
+        font-size: 0.9em;
+    }
+    .mail p{
+        font-size: 0.9em;
+    }
+    .telephone p{
+        font-size: 0.9em;
+    }
+}
+@media (max-width:511px){
+    .l1{
+        width: 300px;
+    }
+    .contacttitre{
+        margin-bottom: 20px;
+    }
+    .grid{
+        grid-template-areas: 
+        "mail"
+        "tel" 
+        "loca";
+    }
+    .ligne{
+        width: 180px;
+    }
+    .contactart{
+        height: 700px;
+    }
+   
+}
+@media (max-width:400px){
+    .contactart{
+        background-image: url(./Goulot\ en\ point\ torsadés\ -\ Alpha.png);
+        background-size: cover;
+        background-position: center;
+        margin-top: 20px;
+        height: 700px;
+    }
+}
+@media (max-width:340px){
+    .log2{
+        width: 200px;
+    }
+    .hamb{
+        width: 30px;
+        top: 20px;
+        right: 20px;
+    }
+}

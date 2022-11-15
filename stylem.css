@@ -1,0 +1,97 @@
+*,::before ,::after{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:rgb(83 77 79) ;
+}
+header{
+    width: 100%;
+    z-index: 10; 
+}
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+    background-color:rgb(83 77 79) ;
+}
+html{
+    font-family: Poppins;
+}
+.navbar{
+    position: relative;
+    right: -5%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    overflow-x: hidden;
+    height: 90px;
+}
+.btnnav{
+    position: absolute;
+}
+
+.navbar li  a{
+    position: relative;
+    text-decoration: none;
+    font-family: Poppins;
+    font-size: 1.7em;
+    color: #fff;
+    z-index: 20;
+    transition: all 0.5s ease;
+    
+}
+.navbar li  a:hover{
+    color: rgb(253, 153, 39);
+    border-bottom: 1px rgb(253, 153, 39) solid ;
+}
+
+.imgnav{
+    position: relative;
+    right: 2%;
+    width: 20%;
+    
+}
+section{
+    background-image: url(./Projet\ sans\ titre\ 43\ filtré.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 20%;
+    height: 90vh;
+}
+article{
+    position: relative;
+    top: 20%;
+    left: 5%;
+    width: 90%;
+    background-color: rgb(32, 30, 31);
+    color: #f1f1f1;
+    height: 80vh;
+    
+}
+h1{
+    font-size: 1.7em;
+    margin: 10px;
+}
+h2{
+    font-size: 1.3em;
+    margin: 10px;
+}
+p{
+    margin: 10px;
+}
+.cpy{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+
+}
